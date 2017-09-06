@@ -1,0 +1,5 @@
+config BR2_PACKAGE_ARM9LINUXFW
+  bool "arm9linuxfw"
+  default y
+	help
+    "hello"

@@ -1,4 +1,4 @@
-# Add project-specific packages for Buildroot here
-#
-# If these are non-proprietary, please consider contributing them back to
-# Nerves or Buildroot.
+menu "3DS Packages"
+  source "$NERVES_DEFCONFIG_DIR/package/firmlinuxloader/Config.in"
+  source "$NERVES_DEFCONFIG_DIR/package/arm9linuxfw/Config.in"
+endmenu

@@ -1,0 +1,5 @@
+config BR2_PACKAGE_FIRMLINUXLOADER
+  bool "firmlinuxloader"
+  default y
+	help
+    "hello"
