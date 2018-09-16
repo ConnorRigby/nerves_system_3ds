@@ -34,7 +34,7 @@ defmodule NervesSystem3DS.MixProject do
   defp nerves_package do
     [
       type: :system,
-      # build_runner: Nerves.Artifact.BuildRunners.Docker,
+      build_runner: Nerves.Artifact.BuildRunners.Docker,
       artifact_sites: [
         # {:prefix, "file:///my_artifacts/"}
         {:github_releases, "ConnorRigby/#{@app}"}
