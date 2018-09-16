@@ -1,25 +1,28 @@
 # Nerves System 3DS.
 
-This requires `devkitarm` to compile.
-see [their page](https://sourceforge.net/projects/devkitpro/files/devkitARM/) for
-info for on installing that.
+[![CircleCI](https://circleci.com/gh/ConnorRigby/nerves_system_3ds.svg?style=svg)](https://circleci.com/gh/ConnorRigby/nerves_system_3ds)
+[![Hex version](https://img.shields.io/hexpm/v/nerves_system_3ds.svg "Hex version")](https://hex.pm/packages/nerves_system_rpi3)
 
-# FAQ
 
-## Does this work?
-yes.
+This is a work in (really slow) progress. I get around to updating this about
+once or twice a year, and i may or may not get it to a really usable point.
 
-## Does it require special hardware?
-no.
+## What is working?
+* Both screens
+* Touch screen input
+* Physical button input
+* Booting
+* Wayland
 
-## Why two different toolchains?
-I'm lazy.
+## What isn't working?
+* Squashfs
+* SD card
+* WiFi
+* Camera(s)
+* 3d(?)
 
-# Setup
-* Follow the [3ds hack guide](https://3ds.guide/).
-* Build with Nerves systems.
-* Profit.
-
-# Credits
-* [xerpi](https://github.com/xerpi) - Linux port and firm loader.
-* [devkit arm](https://sourceforge.net/projects/devkitpro/files/devkitARM/) - Toolchain!
+## Credits
+* [@xerpi's linux port](https://github.com/xerpi/linux_3ds)
+* [@xerpi's linux loader](https://github.com/xerpi/firm_linux_loader)
+* [@xerpi's arm9linuxfw](https://github.com/xerpi/arm9linuxfw)
+* [@nerves-project's framework](https://nerves-project.org/)
