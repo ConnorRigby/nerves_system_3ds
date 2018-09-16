@@ -4,8 +4,7 @@
 #
 ################################################################################
 FIRMLINUXLOADER_VERSION = master
-FIRMLINUXLOADER_SITE_METHOD = git
-FIRMLINUXLOADER_SITE = ssh://git@github.com/xerpi/firm_linux_loader.git
+FIRMLINUXLOADER_SITE = $(call github,xerpi,firm_linux_loader,$(FIRMLINUXLOADER_VERSION))
 FIRMLINUXLOADER_LICENSE = GPLv2
 FIRMLINUXLOADER_LICENSE_FILES = license.txt
 

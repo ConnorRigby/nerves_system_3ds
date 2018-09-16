@@ -3,9 +3,8 @@
 # arm9linuxfw
 #
 ################################################################################
-ARM9LINUXFW_VERSION = master
-ARM9LINUXFW_SITE_METHOD = git
-ARM9LINUXFW_SITE = ssh://git@github.com/xerpi/arm9linuxfw.git
+ARM9LINUXFW_VERSION = 32f88e9106efe9d03dd4fe960a801be75d563f61
+ARM9LINUXFW_SITE = $(call github,xerpi,arm9linuxfw,$(ARM9LINUXFW_VERSION))
 ARM9LINUXFW_LICENSE = GPLv2
 ARM9LINUXFW_LICENSE_FILES = license.txt
 
