@@ -34,7 +34,7 @@ defmodule NervesSystem3DS.MixProject do
   defp nerves_package do
     [
       type: :system,
-      build_runner: Nerves.Artifact.BuildRunners.Docker,
+      # build_runner: Nerves.Artifact.BuildRunners.Docker,
       artifact_sites: [
         # {:prefix, "file:///my_artifacts/"}
         {:github_releases, "ConnorRigby/#{@app}"}
@@ -50,8 +50,8 @@ defmodule NervesSystem3DS.MixProject do
   defp deps do
     [
       {:nerves, "~> 1.0", runtime: false},
-      # {:nerves_system_br, "1.4.5", runtime: false},
-      {:nerves_system_br, github: "nerves-project/nerves_system_br", runtime: false, override: true},
+      {:nerves_system_br, "1.4.5", runtime: false},
+      # {:nerves_system_br, github: "nerves-project/nerves_system_br", runtime: false, override: true},
       {:nerves_toolchain_arm_unknown_linux_gnueabihf, "1.1.0", runtime: false},
       {:nerves_system_linter, "~> 0.3.0", runtime: false},
       {:ex_doc, "~> 0.18", only: :dev}
